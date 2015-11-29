@@ -112,7 +112,7 @@
 		@include vendor('transform', 'translate3d(0,0,0)');
 
 		/* Set your background with this */
-		background: _misc(bg);
+		//background: _misc(bg);
 
 		background-repeat: repeat-x;
 		height: 100%;
@@ -167,10 +167,13 @@
 	}
 	#logo-bg{
 		background-image: url("/images/LOGO_BG.png");
+		width: 100%;
+		height: 100%;
 	}
 	#logo-main{
 		width: auto;
 		background-image: url("/images/LOGO_Main.png");
+		background-repeat: no-repeat;
 		min-height: 480px;
 		background-position: center;
 	}
