@@ -1,3 +1,8 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
 /*
 	Aerial by HTML5 UP
 	html5up.net | @n33co
@@ -20,14 +25,16 @@
 
 	#header {
 		opacity: 1;
-	}
 
-		#header nav li {
-			opacity: 1;
+		nav {
+			li {
+				opacity: 1;
+			}
 		}
+	}
 
 /* Footer */
 
 	#footer {
-		background-image: url("images/ie/footer.svg");
+		background-image: url('images/ie/footer.svg');
 	}
