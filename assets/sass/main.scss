@@ -112,7 +112,7 @@
 		@include vendor('transform', 'translate3d(0,0,0)');
 
 		/* Set your background with this */
-		//background: _misc(bg);
+		background: _misc(bg);
 
 		background-repeat: repeat-x;
 		height: 100%;
@@ -178,6 +178,20 @@
 		background-position: center;
 	}
 
+	.logo{
+		//max-height: 60%;
+		margin: 0 auto;
+		width: 80%;
+		background-image: url("images/LOGO_Glow.png");
+background-position: center;
+background-size: 100% 100%;
+		
+	}
+	#logo-glow{
+		////position: absolute;
+		//top:0px;
+		//left: 0px;
+	}
 /* Header */
 
 	@include keyframes('header') {
@@ -310,7 +324,7 @@
 
 		/* BG */
 
-			@include bg(_misc(bg-width));
+			//@include bg(_misc(bg-width));
 
 	}
 
@@ -326,7 +340,7 @@
 
 		/* BG */
 
-			@include bg(_misc(bg-width) * 0.5);
+			//@include bg(_misc(bg-width) * 0.5);
 
 	}
 
@@ -346,7 +360,7 @@
 
 		/* BG */
 
-			@include bg(_misc(bg-width) * 0.2);
+			//@include bg(_misc(bg-width) * 0.2);
 
 		/* Header */
 
@@ -382,7 +396,7 @@
 
 		/* BG */
 
-			@include bg(_misc(bg-width) * 0.275);
+			//@include bg(_misc(bg-width) * 0.275);
 
 		/* Header */
 

@@ -184,6 +184,7 @@ a:hover {
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   /* Set your background with this */
+  background: transparent url("images/bg.jpg") bottom left;
   background-repeat: repeat-x;
   height: 100%;
   left: 0;
@@ -342,6 +343,15 @@ a:hover {
   background-position: center;
 }
 
+/* line 181, ../sass/main.scss */
+.logo {
+  margin: 0 auto;
+  width: 80%;
+  background-image: url("images/LOGO_Glow.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
 /* Header */
 @-moz-keyframes header {
   0% {
@@ -471,7 +481,7 @@ a:hover {
     opacity: 1;
   }
 }
-/* line 193, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 #header {
   -moz-animation: header 1s 2.25s forwards;
   -webkit-animation: header 1s 2.25s forwards;
@@ -494,24 +504,24 @@ a:hover {
   vertical-align: middle;
   width: 90%;
 }
-/* line 206, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #header h1 {
   font-size: 4.35em;
   font-weight: 900;
   letter-spacing: -0.035em;
   line-height: 1em;
 }
-/* line 213, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 #header p {
   font-size: 1.25em;
   margin: 0.75em 0 0.25em 0;
   opacity: 0.75;
 }
-/* line 219, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 #header nav {
   margin: 1.5em 0 0 0;
 }
-/* line 222, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 #header nav li {
   -moz-animation: nav-icons 0.5s ease-in-out forwards;
   -webkit-animation: nav-icons 0.5s ease-in-out forwards;
@@ -533,84 +543,84 @@ a:hover {
   top: 0;
   width: 5.35em;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(1) {
   -moz-animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
   -ms-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(2) {
   -moz-animation-delay: 2.75s;
   -webkit-animation-delay: 2.75s;
   -ms-animation-delay: 2.75s;
   animation-delay: 2.75s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(3) {
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(4) {
   -moz-animation-delay: 3.25s;
   -webkit-animation-delay: 3.25s;
   -ms-animation-delay: 3.25s;
   animation-delay: 3.25s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(5) {
   -moz-animation-delay: 3.5s;
   -webkit-animation-delay: 3.5s;
   -ms-animation-delay: 3.5s;
   animation-delay: 3.5s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(6) {
   -moz-animation-delay: 3.75s;
   -webkit-animation-delay: 3.75s;
   -ms-animation-delay: 3.75s;
   animation-delay: 3.75s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(7) {
   -moz-animation-delay: 4s;
   -webkit-animation-delay: 4s;
   -ms-animation-delay: 4s;
   animation-delay: 4s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(8) {
   -moz-animation-delay: 4.25s;
   -webkit-animation-delay: 4.25s;
   -ms-animation-delay: 4.25s;
   animation-delay: 4.25s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(9) {
   -moz-animation-delay: 4.5s;
   -webkit-animation-delay: 4.5s;
   -ms-animation-delay: 4.5s;
   animation-delay: 4.5s;
 }
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 #header nav li:nth-child(10) {
   -moz-animation-delay: 4.75s;
   -webkit-animation-delay: 4.75s;
   -ms-animation-delay: 4.75s;
   animation-delay: 4.75s;
 }
-/* line 241, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 #header nav a {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   border: 0;
   display: inline-block;
 }
-/* line 247, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #header nav a:before {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -627,32 +637,32 @@ a:hover {
   top: 0;
   width: 2.5em;
 }
-/* line 261, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 #header nav a:hover {
   font-size: 1.1em;
 }
-/* line 264, ../sass/main.scss */
+/* line 278, ../sass/main.scss */
 #header nav a:hover:before {
   background-color: rgba(255, 255, 255, 0.175);
   color: #fff;
 }
-/* line 270, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 #header nav a:active {
   font-size: 0.95em;
   background: none;
 }
-/* line 274, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 #header nav a:active:before {
   background-color: rgba(255, 255, 255, 0.35);
   color: #fff;
 }
-/* line 280, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 #header nav a span {
   display: none;
 }
 
 /* Footer */
-/* line 289, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 #footer {
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
@@ -671,239 +681,55 @@ a:hover {
 /* Wide */
 @media screen and (max-width: 1680px) {
   /* Basic */
-  /* line 307, ../sass/main.scss */
+  /* line 321, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 13pt;
   }
 
   /* BG */
-  @-moz-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-1500px,0,0);
-      -webkit-transform: translate3d(-1500px,0,0);
-      -ms-transform: translate3d(-1500px,0,0);
-      transform: translate3d(-1500px,0,0);
-    }
-  }
-  @-webkit-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-1500px,0,0);
-      -webkit-transform: translate3d(-1500px,0,0);
-      -ms-transform: translate3d(-1500px,0,0);
-      transform: translate3d(-1500px,0,0);
-    }
-  }
-  @-ms-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-1500px,0,0);
-      -webkit-transform: translate3d(-1500px,0,0);
-      -ms-transform: translate3d(-1500px,0,0);
-      transform: translate3d(-1500px,0,0);
-    }
-  }
-  @keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-1500px,0,0);
-      -webkit-transform: translate3d(-1500px,0,0);
-      -ms-transform: translate3d(-1500px,0,0);
-      transform: translate3d(-1500px,0,0);
-    }
-  }
-  /* line 33, ../sass/main.scss */
-  #bg {
-    background-size: 1500px auto;
-    width: 4500px;
-  }
 }
 /* Normal */
 @media screen and (max-width: 1280px) {
   /* Basic */
-  /* line 323, ../sass/main.scss */
+  /* line 337, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 12pt;
   }
 
   /* BG */
-  @-moz-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-750px,0,0);
-      -webkit-transform: translate3d(-750px,0,0);
-      -ms-transform: translate3d(-750px,0,0);
-      transform: translate3d(-750px,0,0);
-    }
-  }
-  @-webkit-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-750px,0,0);
-      -webkit-transform: translate3d(-750px,0,0);
-      -ms-transform: translate3d(-750px,0,0);
-      transform: translate3d(-750px,0,0);
-    }
-  }
-  @-ms-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-750px,0,0);
-      -webkit-transform: translate3d(-750px,0,0);
-      -ms-transform: translate3d(-750px,0,0);
-      transform: translate3d(-750px,0,0);
-    }
-  }
-  @keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-750px,0,0);
-      -webkit-transform: translate3d(-750px,0,0);
-      -ms-transform: translate3d(-750px,0,0);
-      transform: translate3d(-750px,0,0);
-    }
-  }
-  /* line 33, ../sass/main.scss */
-  #bg {
-    background-size: 750px auto;
-    width: 2250px;
-  }
 }
 /* Mobile */
 @media screen and (max-width: 736px) {
   /* Basic */
-  /* line 339, ../sass/main.scss */
+  /* line 353, ../sass/main.scss */
   body {
     min-width: 320px;
   }
 
-  /* line 343, ../sass/main.scss */
+  /* line 357, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 11pt;
   }
 
   /* BG */
-  @-moz-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-300px,0,0);
-      -webkit-transform: translate3d(-300px,0,0);
-      -ms-transform: translate3d(-300px,0,0);
-      transform: translate3d(-300px,0,0);
-    }
-  }
-  @-webkit-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-300px,0,0);
-      -webkit-transform: translate3d(-300px,0,0);
-      -ms-transform: translate3d(-300px,0,0);
-      transform: translate3d(-300px,0,0);
-    }
-  }
-  @-ms-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-300px,0,0);
-      -webkit-transform: translate3d(-300px,0,0);
-      -ms-transform: translate3d(-300px,0,0);
-      transform: translate3d(-300px,0,0);
-    }
-  }
-  @keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-300px,0,0);
-      -webkit-transform: translate3d(-300px,0,0);
-      -ms-transform: translate3d(-300px,0,0);
-      transform: translate3d(-300px,0,0);
-    }
-  }
-  /* line 33, ../sass/main.scss */
-  #bg {
-    background-size: 300px auto;
-    width: 900px;
-  }
-
   /* Header */
-  /* line 354, ../sass/main.scss */
+  /* line 368, ../sass/main.scss */
   #header h1 {
     font-size: 2.5em;
   }
-  /* line 358, ../sass/main.scss */
+  /* line 372, ../sass/main.scss */
   #header p {
     font-size: 1em;
   }
-  /* line 362, ../sass/main.scss */
+  /* line 376, ../sass/main.scss */
   #header nav {
     font-size: 1em;
   }
-  /* line 366, ../sass/main.scss */
+  /* line 380, ../sass/main.scss */
   #header nav a:hover {
     font-size: 1em;
   }
-  /* line 370, ../sass/main.scss */
+  /* line 384, ../sass/main.scss */
   #header nav a:active {
     font-size: 1em;
   }
@@ -911,70 +737,8 @@ a:hover {
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
   /* BG */
-  @-moz-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-412.5px,0,0);
-      -webkit-transform: translate3d(-412.5px,0,0);
-      -ms-transform: translate3d(-412.5px,0,0);
-      transform: translate3d(-412.5px,0,0);
-    }
-  }
-  @-webkit-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-412.5px,0,0);
-      -webkit-transform: translate3d(-412.5px,0,0);
-      -ms-transform: translate3d(-412.5px,0,0);
-      transform: translate3d(-412.5px,0,0);
-    }
-  }
-  @-ms-keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-412.5px,0,0);
-      -webkit-transform: translate3d(-412.5px,0,0);
-      -ms-transform: translate3d(-412.5px,0,0);
-      transform: translate3d(-412.5px,0,0);
-    }
-  }
-  @keyframes bg {
-    0% {
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    100% {
-      -moz-transform: translate3d(-412.5px,0,0);
-      -webkit-transform: translate3d(-412.5px,0,0);
-      -ms-transform: translate3d(-412.5px,0,0);
-      transform: translate3d(-412.5px,0,0);
-    }
-  }
-  /* line 33, ../sass/main.scss */
-  #bg {
-    background-size: 412.5px auto;
-    width: 1237.5px;
-  }
-
   /* Header */
-  /* line 390, ../sass/main.scss */
+  /* line 404, ../sass/main.scss */
   #header nav {
     padding: 0 1em;
   }
