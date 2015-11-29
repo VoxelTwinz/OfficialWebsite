@@ -1,74 +1,32 @@
 /*
-<<<<<<< HEAD
 	Aerial by HTML5 UP
-=======
-	Identity by HTML5 UP
->>>>>>> Timo
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-<<<<<<< HEAD
 /* Wrapper */
-
-	#wrapper {
-		opacity: 1;
-	}
+/* line 14, ../sass/ie9.scss */
+#wrapper {
+  opacity: 1;
+}
 
 /* Overlay */
-
-	#overlay {
-		opacity: 1;
-	}
+/* line 20, ../sass/ie9.scss */
+#overlay {
+  opacity: 1;
+}
 
 /* Header */
-
-	#header {
-		opacity: 1;
-	}
-
-		#header nav li {
-			opacity: 1;
-		}
+/* line 26, ../sass/ie9.scss */
+#header {
+  opacity: 1;
+}
+/* line 30, ../sass/ie9.scss */
+#header nav li {
+  opacity: 1;
+}
 
 /* Footer */
-
-	#footer {
-		background-image: url("images/ie/footer.svg");
-=======
-/* Basic */
-
-	body {
-		background-image: url("../../images/bg.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: bottom center;
-		background-attachment: fixed;
-	}
-
-		body:after {
-			display: none;
-		}
-
-/* List */
-
-	ul.icons li a:before {
-		color: #c8cccf;
-	}
-
-	ul.icons li a:hover:before {
-		color: #ff7496;
-	}
-
-/* Wrapper */
-
-	#wrapper {
-		text-align: center;
-	}
-
-/* Main */
-
-	#main {
-		display: inline-block;
->>>>>>> Timo
-	}
+/* line 38, ../sass/ie9.scss */
+#footer {
+  background-image: url("images/ie/footer.svg");
+}
