@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Aerial by HTML5 UP
+=======
+Identity by HTML5 UP
+>>>>>>> Timo
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
+<<<<<<< HEAD
 This is Aerial, a single page, single screen responsive site template. Real simple.
 Makes heavy use of CSS animation (something I've been messing with a lot lately).
 Should work well as a landing page that just directs folks to your stuff elsewhere
@@ -16,11 +21,21 @@ the CC0 license. Be sure to check out his other stuff over at flickr (link below
 as well as all the other kickass CC0-licensed images at Unsplash (unsplash.com).
 
 Questions/comments/issues = just email or find me on Twitter. Have fun!
+=======
+Just a fun little profile/card-style template I whipped up during a break between major
+projects. Minimal, responsive, and powered by Skel + Sass. Enjoy :)
+
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
+
+(* = not included)
+>>>>>>> Timo
 
 AJ
 n33.co @n33co dribbble.com/n33
 
 
+<<<<<<< HEAD
 The Scrolling Background:
 
 	This relies entirely on CSS to do its thing, which is cool, but that makes
@@ -56,13 +71,23 @@ Credits:
 	Background Image:
 		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
 			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
+=======
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+>>>>>>> Timo
 
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+<<<<<<< HEAD
 		CSS3 PIE (css3pie.com)
 		Sass (sass-lang.com)
+=======
+		CSS3 Pie (css3pie.com)
+>>>>>>> Timo
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
