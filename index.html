@@ -12,51 +12,41 @@
 		<link href="images/icon.ico" rel="SHORTCUT ICON">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="assets/js/isMobile.js"></script>
+	
+		
 	</head>
 	<body class="loading">
 		<div id="wrapper">
-
-			
-			
 			<div id="bg"></div>
-	
 			<div id="overlay"></div>
 			<div id="main">
-
 				<!-- Header -->
-					<header id="header">
-						<!--
-						<h1>Voxel Twinz</h1>
-						<p>Coming Soon</p>
-						-->
-
-						
-							<h1>
-								<img class="logo" src="assets/css/images/LOGO_Main.png">
-							</h1>
-
-						
-						
-						
-						
-
-						<nav>
-							<ul>
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+				<header id="header">
+					<h1>
+						<img class="logo" src="assets/css/images/LOGO_Main.png">
+					</h1>
+					<nav>
+						<ul>
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="/about" class="fancybox icon fa-envelope-o" data-fancybox-type="iframe"><span class="label">Email</span></a></li>
+						</ul>
+					</nav>
+				</header>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Voxel Twinz. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+				<footer id="footer">
+					<span class="copyright">&copy; Voxel Twinz. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+				</footer>
 
 			</div>
 		</div>
@@ -65,6 +55,36 @@
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			$(document).ready(function() {
+
+				if(isMobile.any){
+					$('.fancybox').fancybox({
+						fitToView	: false,
+						width		: '95%',
+						height		: '95%',
+						autoSize	: false,
+						closeClick	: false,
+						openEffect	: 'none',
+						closeEffect	: 'none',
+						scrolling : 'no'
+					});
+				}
+				else{
+					$('.fancybox').fancybox({
+						maxWidth	: 800,
+						maxHeight	: 600,
+						fitToView	: false,
+						width		: '70%',
+						height		: '70%',
+						autoSize	: false,
+						closeClick	: false,
+						openEffect	: 'none',
+						closeEffect	: 'none',
+						scrolling : 'no'
+					});
+				}
+				
+			});
 		</script>
 	</body>
 </html>

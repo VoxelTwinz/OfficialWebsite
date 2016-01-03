@@ -134,7 +134,6 @@
 	#overlay {
 		@include vendor('animation', 'overlay #{_duration(overlay)} #{$delay-overlay} forwards');
 		background-attachment: fixed, fixed;
-		background-image: url('images/overlay-pattern.png'), url('images/overlay.svg');
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -183,15 +182,8 @@
 		margin: 0 auto;
 		width: 80%;
 		max-width: 600px;
-		background-image: url("images/LOGO_Glow.png");
-background-position: center;
-background-size: 100% 100%;
-		
-	}
-	#logo-glow{
-		////position: absolute;
-		//top:0px;
-		//left: 0px;
+		background-position: center;
+		background-size: 100% 100%;
 	}
 /* Header */
 
