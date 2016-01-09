@@ -42,6 +42,8 @@
 	$delay-nav-icons:		$delay-header + _duration(header) - 1s;
 	$delay-nav-icon:		0.25s;
 
+
+
 /* Basic */
 
 	body, input, select, textarea {
@@ -173,7 +175,7 @@
 		&:before {
 			content: '';
 			display: inline-block;
-			height: 100%;
+			height: 50%;
 			margin-right: 0;
 			vertical-align: middle;
 			width: 1px;
@@ -194,12 +196,46 @@
 
 	.logo{
 		//max-height: 60%;
+		padding-top: 4em;
 		margin: 0 auto;
 		width: 80%;
 		max-width: 600px;
 		background-position: center;
 		background-size: 100% 100%;
+		@include vendor('transition', 'height 0.4s ease-in-out,width 0.4s ease-in-out,opacity 0.4s ease-in-out');
 	}
+
+	.scaleDown{
+		width:0%;
+		height: 0%;
+		opacity: 0;
+		@include vendor('transition', 'height 0.4s ease-in-out,width 0.4s ease-in-out,opacity 0.4s ease-in-out');
+	}
+
+
+	.tg_about{
+		opacity: 0;
+		img {
+			padding-top: 4em;
+			height: 60vh;
+		}
+		@include breakpoint(mobilep) {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.memberFadeIn{
+
+		opacity: 1;
+		@include vendor('transition', 'opacity 0.4s ease-in-out');
+	}
+	.memberFadeOut{
+		opacity: 0;
+		@include vendor('transition', 'opacity 0.4s ease-in-out');
+	}
+	
 /* Header */
 
 	@include keyframes('header') {
@@ -238,9 +274,14 @@
 			opacity: 0.75;
 		}
 
-		nav {
-			margin: 1.5em 0 0 0;
-	
+
+	}
+	nav {
+			margin: 1.5em 0px 0px;
+			position: fixed;
+			right: 50%;
+			transform: translateX(50%);
+			bottom: 3em;
 			li {
 				@include vendor('animation', 'nav-icons #{_duration(nav-icons)} ease-in-out forwards');
 				@include vendor('backface-visibility', 'hidden');
@@ -295,10 +336,10 @@
 
 				&:active {
 					font-size: 0.95em;
-					background: none;
+					
 
 					&:before {
-						background-color: _palette(nav-icon, active-bg);
+				
 						color: _palette(nav-icon, active-fg);
 					}
 				}
@@ -308,8 +349,6 @@
 				}
 			}
 		}
-	}
-
 /* Footer */
 
 	#footer {

@@ -21,11 +21,23 @@
 		<script type="text/javascript" src="assets/js/isMobile.js"></script>
 		<!-- slideToggle -->
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#btn_about").click(function(){
-					$(".tg_about").slideToggle();
-				});
-			});
+			var isOpen = false;
+
+			function openAbout(){
+				$(".tg_about").slideToggle();
+				isOpen = !isOpen;
+				if(isOpen){
+					$('.logo').addClass('scaleDown');
+					$('.tg_about').addClass('memberFadeIn');
+					$('.tg_about').removeClass('memberFadeOut');
+				}
+				else{
+					$('.logo').removeClass('scaleDown');
+					$('.tg_about').removeClass('memberFadeIn');
+					$('.tg_about').addClass('memberFadeOut');
+
+				}
+			}
 		</script>
 	
 	</head>
@@ -36,30 +48,27 @@
 			<div id="main">
 				<!-- Header -->
 				<header id="header">
-					<h1>
-						<img class="logo toggle01" src="assets/css/images/LOGO_Main.png">
-					</h1>
+					
+						<img class="logo" src="assets/css/images/LOGO_Main.png">
+					
 					<!-- About us -->
-					<a href="#" id="btn_about"><div>(Toggle)</div></a>
-					<div class="tg_about">
-						<p class="tg_about">About us</p>
-						<img src="assets/css/images/LOGO_Main.png">
-
+					<div class="tg_about" style="display:none;">
+							<img  src="assets/css/images/Member.png">
 					</div>
 
-					<!-- Butten -->
+					
+				</header>
+				<!-- Butten -->
 					<nav>
 						<ul>
 							<li><a href="http://knockinggirl.voxel-twinz.tw" class="icon knocking"><div></div></a></li>
 							<li><a href="https://www.facebook.com/VoxelTwinz/" class="icon facebook"><div></div></a></li>
-							<li><a href="#" id="btn_about" class="icon aboutus"><div></div></a></li>
+							<li><a onclick="openAbout()" id="btn_about" class="icon aboutus"><div></div></a></li>
 							<!--
 							<li><a href="about" class="fancybox icon aboutus" data-fancybox-type="iframe"><div></div></a></li>
 							-->
 						</ul>
 					</nav>
-
-				</header>
 
 				<!-- Footer -->
 				<footer id="footer">
