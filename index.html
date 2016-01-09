@@ -19,8 +19,15 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
 		<script type="text/javascript" src="assets/js/isMobile.js"></script>
+		<!-- slideToggle -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn_about").click(function(){
+					$(".tg_about").slideToggle();
+				});
+			});
+		</script>
 	
-		
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -30,15 +37,28 @@
 				<!-- Header -->
 				<header id="header">
 					<h1>
-						<img class="logo" src="assets/css/images/LOGO_Main.png">
+						<img class="logo toggle01" src="assets/css/images/LOGO_Main.png">
 					</h1>
+					<!-- About us -->
+					<a href="#" id="btn_about"><div>(Toggle)</div></a>
+					<div class="tg_about">
+						<p class="tg_about">About us</p>
+						<img src="assets/css/images/LOGO_Main.png">
+
+					</div>
+
+					<!-- Butten -->
 					<nav>
 						<ul>
 							<li><a href="http://knockinggirl.voxel-twinz.tw" class="icon knocking"><div></div></a></li>
 							<li><a href="https://www.facebook.com/VoxelTwinz/" class="icon facebook"><div></div></a></li>
+							<li><a href="#" id="btn_about" class="icon aboutus"><div></div></a></li>
+							<!--
 							<li><a href="about" class="fancybox icon aboutus" data-fancybox-type="iframe"><div></div></a></li>
+							-->
 						</ul>
 					</nav>
+
 				</header>
 
 				<!-- Footer -->

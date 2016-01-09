@@ -55,7 +55,7 @@
 
 	body {
 		background: _palette(bg);
-		overflow: hidden;
+    	overflow: auto;
 
 		&.loading{
 			* {
